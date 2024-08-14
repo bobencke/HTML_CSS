@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídia</title>
+</head>
+<body>
+
+    <h1>Imagem Dinâmica</h1>
+
+    <picture>
+        <!-- Se a tela for menor que 600px, será visualizada a imagem do coelho -->
+        <source media="(max-width: 600px)" srcset="img/coelho.png" type="image/png">
+        <!-- Se a tela for menor que 800px, será visualizada a imagem do gato -->
+        <source media="(max-width: 800px)" srcset="img/gato.png" type="image/png">
+        <!-- Acima de 800px, será visualizada a imagem do avestruz -->
+        <img src="img/avestruz.png" alt="Imagem flexível" width="300">
+    </picture>
+    
+    <h1>Áudio</h1>
+
+    <!-- <audio src="audio/In The Wild - National Sweetheart.mp3" controls></audio> -->
+
+    <!-- Exercitando compatibilidade com todos os tipos: -->
+
+    <audio preload="metadata" controls>
+        <source src="audio/In The Wild - National Sweetheart.mp3" type="audio/mpeg">
+        <source src="audio/In The Wild - National Sweetheart.mp3" type="audio/ogg">
+        <source src="audio/In The Wild - National Sweetheart.mp3" type="audio/wave">
+        <p>Infelizmente seu navegador não consegue reproduzir áudio. <a href="audio/In The Wild - National Sweetheart.mp3">Clique aqui para baixar o arquivo</a></p>
+    </audio>
+
+    <h1>Vídeo hospedado localmente</h1>
+
+    <!-- Handbrake - open source para manipular e converter vídeos -->
+
+    <!-- <video src="video/pato_leve.mp4" width="500" controls></video> -->
+
+    <!-- Exercitando compatibilidade com todos os tipos: -->    
+
+    <video width="500" poster="video/galinha_mine.webp" controls loop>
+        <source src="video/pato_leve.mp4" type="video/mp4">
+        <!-- TIPOS ALTERNATIVOS
+        <source src="video/pato_leve.m4v" type="video/mp4">
+        <source src="video/pato_leve.webm" type="video/mp4"> 
+        <source src="video/pato_leve.ogv" type="video/mp4"> -->
+        <p>Seu navegador não possui compatibilidade com reprodução de vídeos</p>
+    </video>
+
+    <h1>Incorporação de Vídeo Externo</h1>
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/17_ucZl7MVo?si=VkxnqTvhPMQOJZkz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    
+</body>
+</html>

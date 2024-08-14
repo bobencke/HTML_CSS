@@ -1,0 +1,16 @@
+@charset "UTF-8";
+
+body{
+    background-color: lightseagreen;
+    text-align: center;
+}
+h1{
+    color: darkblue;
+    background-color: blueviolet;
+}
+h2{
+    color:darkslateblue;
+}
+p{
+    text-align: justify;
+}

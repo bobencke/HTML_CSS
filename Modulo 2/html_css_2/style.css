@@ -1,0 +1,23 @@
+body{
+    background-color: rgb(252, 197, 179);
+}
+
+div{
+    margin: auto;
+    background-color: white;
+    width: 40%;
+    padding: 15px;
+    border-radius: 20px;
+    border-style: dotted;
+    border-width: 1px;
+}
+
+h1{
+    text-align: center;
+    text-shadow: 1px 1px 3px #adadad;
+}
+
+p{
+    text-align: justify;
+    text-indent: 20px;
+}
