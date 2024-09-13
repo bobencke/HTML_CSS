@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table{
+            margin: auto;
+            width: 400px;
+            border-collapse: collapse;
+        }
+        caption{
+            padding: 10px;
+            font-weight: bolder;
+            font-size: 20px;
+        }
+        td, th{
+            border: 1px solid black;
+            padding: 5px;
+        }
+        .cnome{
+            background-color: chartreuse;
+        }
+        .cgrupo{
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    
+    <h1>Exercício de Tabelas</h1>
+
+    <table>
+        <colgroup>
+            <col class="cnome">
+            <col class="cgrupo" span="2">
+            <col class="cprofissao">
+        </colgroup>
+        <caption>Cadastro</caption>
+        <tr>
+            <th scope="col">Nome</th>
+            <th scope="col">Sexo</th>
+            <th scope="col">Idade</th>
+            <th scope="col">Profissão</th>
+        </tr>
+        <tr>
+            <td>Bernardo</td>
+            <td>F</td>
+            <td>22</td>
+            <td>Namorado</td>
+        </tr>
+        <tr>
+            <td>Manuela Goettert</td>
+            <td>F</td>
+            <td>21</td>
+            <td>Psiquiatra</td>
+        </tr>
+        <tr>
+            <td>Nagini</td>
+            <td>?</td>
+            <td>4</td>
+            <td>Gorda</td>
+        </tr>
+        <tr>
+            <td>Flor</td>
+            <td>F</td>
+            <td>?</td>
+            <td>Grávida</td>
+        </tr>
+        <tr>
+            <td>Denilson</td>
+            <td>M!</td>
+            <td>56</td>
+            <td>Gerente</td>
+        </tr>
+        <tr>
+            <td>Liane</td>
+            <td>F</td>
+            <td>51</td>
+            <td>Empresária</td>
+        </tr>
+    </table>
+
+</body>
+</html>
